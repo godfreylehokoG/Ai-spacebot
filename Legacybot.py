@@ -25,7 +25,7 @@ for tweet in tweepy.Cursor(api.search, q=query).items():
         tweet.favorite()
         print('Favorited the tweet')
 
-        sleep(225)
+        sleep(30)
 
     except tweepy.TweepError as e:
         print(e.reason)
