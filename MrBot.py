@@ -7,15 +7,15 @@ from os import environ
 query = ("#ai OR #datascience OR #Artificialintellegence")
 
 # Authenticate to Twitter
-consumer_key = environ['consumer_key']
-consumer_secret = environ['consumer_secret'] 
-access_token = environ['access_token'] 
-access_token_secret = environ['access_token_secret']
+CONSUMER_KEY = environ['CONSUMER_KEY']
+CONSUMER_SECRET = environ['CONSUMER_SECRET'] 
+ACCESS_TOKEN = environ['ACCESS_TOKEN']
+ACCESS_SECRET = environ['ACCESS_SECRET']
 
-auth = tweepy.OAuthHandler(consumer_key, 
-   consumer_secret)
-auth.set_access_token(access_token, 
-    access_token_secret)
+auth = tweepy.OAuthHandler(CONSUMER_KEY, 
+  CONSUMER_SECRET)
+auth.set_access_token(ACCESS_TOKEN, 
+    ACCESS_SECRET)
 
 api = tweepy.API(auth)
 
