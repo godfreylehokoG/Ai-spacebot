@@ -1,4 +1,4 @@
-from nohut import *
+
 import tweepy
 from time import sleep
 import os
