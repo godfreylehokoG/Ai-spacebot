@@ -1,1 +1,1 @@
-worker: python MrBot.py & Legacybot.py & wait -n
+worker: python MrBot.py & python Legacybot.py & wait -n
