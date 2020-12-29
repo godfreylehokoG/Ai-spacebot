@@ -1,5 +1,7 @@
 import tweepy
 from time import sleep
+import os
+from os import environ
 
 query = ("#ai OR #datascience OR #Artificialintellegence")
 
