@@ -3,11 +3,16 @@ from time import sleep
 
 query = ("#ai OR #datascience OR #Artificialintellegence")
 
-# Authenticate to Twitter
-auth = tweepy.OAuthHandler("WjYRx31pvXGLApFJ7QyiL0kBw", 
-    "8EZE9Xnkz9PtdYSEQRjMPUyCNc25VQ4ok9in5SRICFMYTp8N2I")
-auth.set_access_token("935446829730291717-xM9LVHSLzgVz01pZUKGQyeyHFG8jZZb", 
-    "E2zKRdxKScIDuULgMMr5932AzecKpGDi4KSZ18GXX0HZb")
+# Twitter Authentication
+CONSUMER_KEY = environ['CONSUMER_KEY']
+CONSUMER_SECRET = environ['CONSUMER_SECRET'] 
+ACCESS_TOKEN = environ['ACCESS_TOKEN'] 
+ACCESS_SECRET = environ['ACCESS_SECRET']
+
+auth = tweepy.OAuthHandler(CONSUMER_KEY, 
+   CONSUMER_SECRET)
+auth.set_access_token(ACCESS_TOKEN, 
+    ACCESS_SECRET)
 
 api = tweepy.API(auth)
 
