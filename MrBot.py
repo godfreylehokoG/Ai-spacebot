@@ -4,7 +4,7 @@ from time import sleep
 import os
 from os import environ
 
-query = ("#ai OR #datascience OR #Artificialintellegence")
+query = ("#mars OR #datascience OR #spaceexploration OR #spacex")
 
 # Authenticate to Twitter
 CONSUMER_KEY = environ['CONSUMER_KEY']
